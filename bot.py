@@ -23,7 +23,7 @@ def talk_to_me(bot, update):
     u_m.reply_text(user_text)
 
 def main():
-    mybot = Updater(settings.API_KEY, request_kwargs = settings.PROXY)
+    mybot = Updater(settings.API_KEY, request_kwargs = settings.PROXY, use_context=True)
 
     logging.info("Bot is starting...")
 
